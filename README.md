@@ -1,4 +1,4 @@
-# MorphicMed-RNI-Control ->Code for Morphic-Med RNI-DNN temperature reconstruction and PID control logic.
+# MorphicMed-RNI-Control -> RNI-DNN temperature reconstruction and PID control logic.
 #Curr control for the PCL-GNP kirigami sheet.
 
 #Status:
