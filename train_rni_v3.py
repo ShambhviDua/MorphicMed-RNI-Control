@@ -2,7 +2,7 @@
 RNI (Resistive Network Inverse) Solver - "The Voltage-to-Temp Guessinator"
 attempt to brute-force map 308 voltages → 308 temps
 COMSOL gave us 10k sims, now we're making this NN chew through them.
-Last stable: 2024-03-15 - DO NOT "IMPROVE" WITHOUT TESTING
+Last stable: 2025-12-15 - DO NOT "IMPROVE" WITHOUT TESTING
 """
 import torch
 import torch.nn as nn
