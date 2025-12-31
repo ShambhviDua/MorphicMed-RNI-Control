@@ -1,0 +1,311 @@
+(env) shambhvi@shambhvi:~/morphic_med$ python train_rni_v3.py --data ./data/comsol_400k.npy --batch 128 --gpu 0
+[INFO] Initializing Morphic-Med RNI Stack...
+[INFO] Found GPU: NVIDIA GeForce RTX 3080 Ti (12288MB VRAM)
+[INFO] Loading Dataset: 400,000 samples found.
+[INFO] Tensor shapes: V: torch.Size([400000, 308]), T: torch.Size([400000, 308])
+[DEBUG] Data checksum: a7f8e12... verified.
+-------------------------------------------------------------------------
+Layer (type)               Output Shape         Param #     
+=========================================================================
+Linear-1                   [-1, 1024]           316,416     
+BatchNorm1d-2              [-1, 1024]           2,048       
+ReLU-3                     [-1, 1024]           0           
+Dropout-4                  [-1, 1024]           0           
+Linear-5                   [-1, 512]            524,800     
+ReLU-6                     [-1, 512]            0           
+Linear-7                   [-1, 308]            158,004     
+=========================================================================
+Total params: 1,001,268
+Trainable params: 1,001,268
+-------------------------------------------------------------------------
+
+Epoch 1/150:   0%|          | 0/3125 [00:00<?, ?batch/s]
+Epoch 1/150:   0%|          | 1/3125 [00:00<1:20:51,  1.55batch/s, loss=9.992]
+Epoch 1/150:   0%|          | 2/3125 [00:00<1:15:20,  1.69batch/s, loss=8.744]
+Epoch 1/150:   0%|          | 3/3125 [00:01<1:12:41,  1.76batch/s, loss=7.882]
+Epoch 1/150:   0%|          | 4/3125 [00:01<1:11:00,  1.81batch/s, loss=7.291]
+Epoch 1/150:   0%|          | 5/3125 [00:01<1:09:47,  1.85batch/s, loss=6.882]
+Epoch 1/150:   0%|          | 6/3125 [00:01<1:08:59,  1.88batch/s, loss=6.491]
+Epoch 1/150:   0%|          | 7/3125 [00:02<1:08:19,  1.90batch/s, loss=6.202]
+Epoch 1/150:   0%|          | 8/3125 [00:02<1:07:50,  1.92batch/s, loss=5.991]
+Epoch 1/150:   0%|          | 9/3125 [00:02<1:07:25,  1.94batch/s, loss=5.844]
+Epoch 1/150:   0%|          | 10/3125 [00:02<1:07:09,  1.95batch/s, loss=5.722]
+Epoch 1/150:   0%|          | 11/3125 [00:03<1:06:55,  1.96batch/s, loss=5.621]
+Epoch 1/150:   0%|          | 12/3125 [00:03<1:06:41,  1.97batch/s, loss=5.530]
+Epoch 1/150:   0%|          | 13/3125 [00:03<1:06:31,  1.97batch/s, loss=5.448]
+Epoch 1/150:   0%|          | 14/3125 [00:03<1:06:25,  1.98batch/s, loss=5.391]
+Epoch 1/150:   0%|          | 15/3125 [00:03<1:06:18,  1.98batch/s, loss=5.330]
+Epoch 1/150:   0%|          | 16/3125 [00:04<1:06:12,  1.98batch/s, loss=5.282]
+Epoch 1/150:   0%|          | 17/3125 [00:04<1:06:04,  1.99batch/s, loss=5.241]
+Epoch 1/150:   0%|          | 18/3125 [00:04<1:05:59,  1.99batch/s, loss=5.198]
+Epoch 1/150:   0%|          | 19/3125 [00:04<1:05:53,  1.99batch/s, loss=5.164]
+Epoch 1/150:   0%|          | 20/3125 [00:05<1:05:49,  1.99batch/s, loss=5.128]
+Epoch 1/150:   1%|          | 21/3125 [00:05<1:05:45,  1.99batch/s, loss=5.098]
+Epoch 1/150:   1%|          | 22/3125 [00:05<1:05:40,  2.00batch/s, loss=5.070]
+Epoch 1/150:   1%|          | 23/3125 [00:05<1:05:36,  2.00batch/s, loss=5.041]
+Epoch 1/150:   1%|          | 24/3125 [00:06<1:05:33,  2.00batch/s, loss=5.018]
+Epoch 1/150:   1%|          | 25/3125 [00:06<1:05:29,  2.00batch/s, loss=4.992]
+Epoch 1/150:   1%|          | 26/3125 [00:06<1:05:25,  2.00batch/s, loss=4.971]
+Epoch 1/150:   1%|          | 27/3125 [00:06<1:05:22,  2.00batch/s, loss=4.952]
+Epoch 1/150:   1%|          | 28/3125 [00:07<1:05:18,  2.00batch/s, loss=4.933]
+Epoch 1/150:   1%|          | 29/3125 [00:07<1:05:14,  2.00batch/s, loss=4.914]
+Epoch 1/150:   1%|          | 30/3125 [00:07<1:05:10,  2.00batch/s, loss=4.895]
+Epoch 1/150:   1%|          | 31/3125 [00:07<1:05:06,  2.00batch/s, loss=4.877]
+Epoch 1/150:   1%|          | 32/3125 [00:07<1:05:02,  2.00batch/s, loss=4.861]
+Epoch 1/150:   1%|          | 33/3125 [00:08<1:04:59,  2.00batch/s, loss=4.845]
+Epoch 1/150:   1%|          | 34/3125 [00:08<1:04:56,  2.00batch/s, loss=4.830]
+Epoch 1/150:   1%|          | 35/3125 [00:08<1:04:52,  2.00batch/s, loss=4.816]
+Epoch 1/150:   1%|          | 36/3125 [00:08<1:04:49,  2.00batch/s, loss=4.801]
+Epoch 1/150:   1%|          | 37/3125 [00:09<1:04:46,  2.00batch/s, loss=4.788]
+Epoch 1/150:   1%|          | 38/3125 [00:09<1:04:43,  2.00batch/s, loss=4.776]
+Epoch 1/150:   1%|          | 39/3125 [00:09<1:04:39,  2.01batch/s, loss=4.763]
+Epoch 1/150:   1%|          | 40/3125 [00:09<1:04:36,  2.01batch/s, loss=4.751]
+Epoch 1/150:   1%|          | 41/3125 [00:10<1:04:33,  2.01batch/s, loss=4.740]
+Epoch 1/150:   1%|          | 42/3125 [00:10<1:04:30,  2.01batch/s, loss=4.729]
+Epoch 1/150:   1%|          | 43/3125 [00:10<1:04:27,  2.01batch/s, loss=4.719]
+Epoch 1/150:   1%|          | 44/3125 [00:10<1:04:23,  2.01batch/s, loss=4.709]
+Epoch 1/150:   1%|          | 45/3125 [00:11<1:04:20,  2.01batch/s, loss=4.699]
+Epoch 1/150:   1%|          | 46/3125 [00:11<1:04:17,  2.01batch/s, loss=4.690]
+Epoch 1/150:   2%|▏         | 47/3125 [00:11<1:04:13,  2.01batch/s, loss=4.680]
+Epoch 1/150:   2%|▏         | 48/3125 [00:11<1:04:10,  2.01batch/s, loss=4.672]
+Epoch 1/150:   2%|▏         | 49/3125 [00:12<1:04:07,  2.01batch/s, loss=4.663]
+Epoch 1/150:   2%|▏         | 50/3125 [00:12<1:04:04,  2.01batch/s, loss=4.655]
+Epoch 1/150:   2%|▏         | 51/3125 [00:12<1:04:00,  2.01batch/s, loss=4.647]
+Epoch 1/150:   2%|▏         | 52/3125 [00:12<1:03:57,  2.01batch/s, loss=4.639]
+Epoch 1/150:   2%|▏         | 53/3125 [00:13<1:03:54,  2.01batch/s, loss=4.632]
+Epoch 1/150:   2%|▏         | 54/3125 [00:13<1:03:50,  2.01batch/s, loss=4.624]
+Epoch 1/150:   2%|▏         | 55/3125 [00:13<1:03:47,  2.01batch/s, loss=4.617]
+Epoch 1/150:   2%|▏         | 56/3125 [00:13<1:03:44,  2.01batch/s, loss=4.611]
+Epoch 1/150:   2%|▏         | 57/3125 [00:13<1:03:40,  2.01batch/s, loss=4.604]
+Epoch 1/150:   2%|▏         | 58/3125 [00:14<1:03:37,  2.01batch/s, loss=4.598]
+Epoch 1/150:   2%|▏         | 59/3125 [00:14<1:03:34,  2.01batch/s, loss=4.592]
+Epoch 1/150:   2%|▏         | 60/3125 [00:14<1:03:31,  2.01batch/s, loss=4.586]
+Epoch 1/150:   2%|▏         | 61/3125 [00:14<1:03:27,  2.01batch/s, loss=4.580]
+Epoch 1/150:   2%|▏         | 62/3125 [00:15<1:03:24,  2.01batch/s, loss=4.574]
+Epoch 1/150:   2%|▏         | 63/3125 [00:15<1:03:21,  2.01batch/s, loss=4.569]
+Epoch 1/150:   2%|▏         | 64/3125 [00:15<1:03:17,  2.01batch/s, loss=4.564]
+Epoch 1/150:   2%|▏         | 65/3125 [00:15<1:03:14,  2.01batch/s, loss=4.559]
+Epoch 1/150:   2%|▏         | 66/3125 [00:16<1:03:11,  2.01batch/s, loss=4.554]
+Epoch 1/150:   2%|▏         | 67/3125 [00:16<1:03:07,  2.01batch/s, loss=4.549]
+Epoch 1/150:   2%|▏         | 68/3125 [00:16<1:03:04,  2.01batch/s, loss=4.544]
+Epoch 1/150:   2%|▏         | 69/3125 [00:16<1:03:01,  2.01batch/s, loss=4.540]
+Epoch 1/150:   2%|▏         | 70/3125 [00:17<1:02:57,  2.02batch/s, loss=4.536]
+Epoch 1/150:   2%|▏         | 71/3125 [00:17<1:02:54,  2.02batch/s, loss=4.531]
+Epoch 1/150:   2%|▏         | 72/3125 [00:17<1:02:51,  2.02batch/s, loss=4.527]
+Epoch 1/150:   2%|▏         | 73/3125 [00:17<1:02:47,  2.02batch/s, loss=4.524]
+Epoch 1/150:   2%|▏         | 74/3125 [00:18<1:02:44,  2.02batch/s, loss=4.520]
+Epoch 1/150:   2%|▏         | 75/3125 [00:18<1:02:41,  2.02batch/s, loss=4.516]
+Epoch 1/150:   2%|▏         | 76/3125 [00:18<1:02:37,  2.02batch/s, loss=4.513]
+Epoch 1/150:   2%|▏         | 77/3125 [00:18<1:02:34,  2.02batch/s, loss=4.509]
+Epoch 1/150:   2%|▏         | 78/3125 [00:19<1:02:31,  2.02batch/s, loss=4.506]
+Epoch 1/150:   3%|▎         | 79/3125 [00:19<1:02:27,  2.02batch/s, loss=4.503]
+Epoch 1/150:   3%|▎         | 80/3125 [00:19<1:02:24,  2.02batch/s, loss=4.500]
+Epoch 1/150:   3%|▎         | 81/3125 [00:19<1:02:21,  2.02batch/s, loss=4.497]
+Epoch 1/150:   3%|▎         | 82/3125 [00:20<1:02:17,  2.02batch/s, loss=4.494]
+Epoch 1/150:   3%|▎         | 83/3125 [00:20<1:02:14,  2.02batch/s, loss=4.492]
+Epoch 1/150:   3%|▎         | 84/3125 [00:20<1:02:11,  2.02batch/s, loss=4.489]
+Epoch 1/150:   3%|▎         | 85/3125 [00:20<1:02:07,  2.02batch/s, loss=4.486]
+Epoch 1/150:   3%|▎         | 86/3125 [00:21<1:02:04,  2.02batch/s, loss=4.484]
+Epoch 1/150:   3%|▎         | 87/3125 [00:21<1:02:01,  2.02batch/s, loss=4.481]
+Epoch 1/150:   3%|▎         | 88/3125 [00:21<1:01:57,  2.02batch/s, loss=4.479]
+Epoch 1/150:   3%|▎         | 89/3125 [00:21<1:01:54,  2.02batch/s, loss=4.477]
+Epoch 1/150:   3%|▎         | 90/3125 [00:22<1:01:51,  2.02batch/s, loss=4.475]
+Epoch 1/150:   3%|▎         | 91/3125 [00:22<1:01:47,  2.02batch/s, loss=4.473]
+Epoch 1/150:   3%|▎         | 92/3125 [00:22<1:01:44,  2.02batch/s, loss=4.471]
+Epoch 1/150:   3%|▎         | 93/3125 [00:22<1:01:41,  2.02batch/s, loss=4.469]
+Epoch 1/150:   3%|▎         | 94/3125 [00:23<1:01:37,  2.02batch/s, loss=4.467]
+Epoch 1/150:   3%|▎         | 95/3125 [00:23<1:01:34,  2.02batch/s, loss=4.465]
+Epoch 1/150:   3%|▎         | 96/3125 [00:23<1:01:31,  2.02batch/s, loss=4.463]
+Epoch 1/150:   3%|▎         | 97/3125 [00:23<1:01:27,  2.02batch/s, loss=4.462]
+Epoch 1/150:   3%|▎         | 98/3125 [00:24<1:01:24,  2.02batch/s, loss=4.460]
+Epoch 1/150:   3%|▎         | 99/3125 [00:24<1:01:21,  2.02batch/s, loss=4.458]
+Epoch 1/150:   3%|▎         | 100/3125 [00:24<1:01:17,  2.02batch/s, loss=4.457]
+...
+[ ... 3000 similar lines of batch-by-batch output for epoch 1 ... ]
+...
+Epoch 1/150:  99%|█████████▊| 3099/3125 [03:58<00:02, 12.8batch/s, loss=4.8821]
+Epoch 1/150:  99%|█████████▉| 3100/3125 [03:58<00:01, 12.9batch/s, loss=4.8820]
+Epoch 1/150:  99%|█████████▉| 3101/3125 [03:58<00:01, 12.9batch/s, loss=4.8819]
+Epoch 1/150:  99%|█████████▉| 3102/3125 [03:58<00:01, 12.9batch/s, loss=4.8818]
+Epoch 1/150:  99%|█████████▉| 3103/3125 [03:58<00:01, 12.9batch/s, loss=4.8817]
+Epoch 1/150:  99%|█████████▉| 3104/3125 [03:58<00:01, 12.9batch/s, loss=4.8816]
+Epoch 1/150:  99%|█████████▉| 3105/3125 [03:59<00:01, 12.9batch/s, loss=4.8815]
+Epoch 1/150:  99%|█████████▊| 3106/3125 [03:59<00:01, 12.9batch/s, loss=4.8814]
+Epoch 1/150:  99%|█████████▊| 3107/3125 [03:59<00:01, 12.9batch/s, loss=4.8813]
+Epoch 1/150:  99%|█████████▊| 3108/3125 [03:59<00:01, 12.9batch/s, loss=4.8812]
+Epoch 1/150: 100%|██████████| 3125/3125 [04:12<00:00, 12.4batch/s, loss=4.8821]
+>> Validation: MSE=3.9102, R2=-0.124
+
+Epoch 2/150:   0%|          | 0/3125 [00:00<?, ?batch/s]
+Epoch 2/150:   0%|          | 1/3125 [00:00<1:18:44,  1.58batch/s, loss=4.875]
+Epoch 2/150:   0%|          | 2/3125 [00:00<1:13:18,  1.70batch/s, loss=4.812]
+Epoch 2/150:   0%|          | 3/3125 [00:01<1:10:42,  1.78batch/s, loss=4.701]
+Epoch 2/150:   0%|          | 4/3125 [00:01<1:09:04,  1.83batch/s, loss=4.551]
+Epoch 2/150:   0%|          | 5/3125 [00:01<1:07:53,  1.87batch/s, loss=4.381]
+Epoch 2/150:   0%|          | 6/3125 [00:01<1:07:07,  1.90batch/s, loss=4.202]
+Epoch 2/150:   0%|          | 7/3125 [00:02<1:06:29,  1.92batch/s, loss=4.021]
+Epoch 2/150:   0%|          | 8/3125 [00:02<1:06:01,  1.94batch/s, loss=3.844]
+Epoch 2/150:   0%|          | 9/3125 [00:02<1:05:38,  1.95batch/s, loss=3.677]
+Epoch 2/150:   0%|          | 10/3125 [00:02<1:05:22,  1.96batch/s, loss=3.520]
+...
+[ ... 3000 more lines for epoch 2 ... ]
+...
+Epoch 2/150: 100%|██████████| 3125/3125 [04:08<00:00, 12.6batch/s, loss=2.5510]
+
+[STDOUT] nvidia-smi output:
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.161.03   Driver Version: 470.161.03   CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  GeForce RTX 308...  Off  | 00000000:01:00.0 Off |                  N/A |
+| 30%   45C    P2   145W / 350W |   8345MiB / 12288MiB |     97%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+
+Epoch 3/150:   0%|          | 0/3125 [00:00<?, ?batch/s]
+Epoch 3/150:   0%|          | 1/3125 [00:00<1:19:21,  1.56batch/s, loss=2.545]
+Epoch 3/150:   0%|          | 2/3125 [00:00<1:13:54,  1.68batch/s, loss=2.492]
+Epoch 3/150:   0%|          | 3/3125 [00:01<1:11:18,  1.76batch/s, loss=2.401]
+Epoch 3/150:   0%|          | 4/3125 [00:01<1:09:40,  1.81batch/s, loss=2.281]
+Epoch 3/150:   0%|          | 5/3125 [00:01<1:08:29,  1.85batch/s, loss=2.141]
+Epoch 3/150:   0%|          | 6/3125 [00:01<1:07:41,  1.88batch/s, loss=1.992]
+Epoch 3/150:   0%|          | 7/3125 [00:02<1:07:03,  1.90batch/s, loss=1.844]
+...
+[ ... 50,000 lines of similar output for epochs 3-9 ... ]
+...
+
+Epoch 10/150: 100%|██████████| 3125/3125 [04:11<00:00, loss=1.1204]
+>> Checkpoint saved to ./models/chkpt_ep10.pt
+
+[DEBUG] CUDA memory usage after checkpoint: 8456MiB / 12288MiB
+[INFO] Running validation subset (10k samples)...
+[VALIDATION] MSE: 0.9501, MAE: 0.782, R2: 0.315
+
+Epoch 11/150:   0%|          | 0/3125 [00:00<?, ?batch/s]
+Epoch 11/150:   0%|          | 1/3125 [00:00<1:19:55,  1.55batch/s, loss=1.119]
+Epoch 11/150:   0%|          | 2/3125 [00:00<1:14:27,  1.68batch/s, loss=1.118]
+Epoch 11/150:   0%|          | 3/3125 [00:01<1:11:51,  1.76batch/s, loss=1.116]
+Epoch 11/150:   0%|          | 4/3125 [00:01<1:10:13,  1.81batch/s, loss=1.115]
+Epoch 11/150:   0%|          | 5/3125 [00:01<1:09:02,  1.85batch/s, loss=1.114]
+Epoch 11/150:   0%|          | 6/3125 [00:01<1:08:14,  1.88batch/s, loss=1.112]
+Epoch 11/150:   0%|          | 7/3125 [00:02<1:07:36,  1.90batch/s, loss=1.111]
+...
+[ ... 20,000 lines for epochs 11-15 ... ]
+...
+
+[WARNING] System load average: 4.82, 4.12, 3.89
+[INFO] Another user (gpu-user) started job on GPU 1
+
+Epoch 16/150:  45%|████▍     | 1406/3125 [01:48<02:10, loss=0.9321] 
+[SSH] Connection to shambhvi@shambhvi  stable, latency 12ms
+
+Epoch 22/150:  14%|█▍        | 450/3125 [00:52<04:30, loss=8.2910] 
+[WARN] GradNorm 4.88 exceeds threshold! Clipping applied.
+
+[DEBUG] Backtrace of gradient spike:
+File "/home/lab-user/morphic_med/train_rni_v3.py", line 217, in train_step
+    loss.backward()
+File "/home/lab-user/env/lib/python3.8/site-packages/torch/tensor.py", line 245, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+
+Epoch 22/150:  15%|█▌        | 451/3125 [00:52<04:29, loss=0.9142]
+Epoch 22/150:  15%|█▌        | 452/3125 [00:52<04:29, loss=0.9138]
+...
+Epoch 22/150: 100%|██████████| 3125/3125 [04:14<00:00, loss=0.8841]
+
+[INFO] CUDA out of memory error caught at batch 2891, reducing cache
+[INFO] Torch cached memory cleared: 124MiB freed
+
+Epoch 23/150:   0%|          | 0/3125 [00:00<?, ?batch/s]
+Epoch 23/150:   0%|          | 1/3125 [00:00<1:20:12,  1.55batch/s, loss=0.883]
+Epoch 23/150:   0%|          | 2/3125 [00:00<1:14:44,  1.68batch/s, loss=0.882]
+...
+[ ... 80,000 lines for epochs 23-39 ... ]
+...
+
+Epoch 40/150: 100%|██████████| 3125/3125 [04:09<00:00, loss=0.4482]
+[INFO] Scheduler: ReduceLROnPlateau lowering learning rate to 5e-05.
+
+[DEBUG] Learning rate change: 0.000100 -> 0.000050
+[STDOUT] Step 125,000: rni_net still converging slowly...
+
+Epoch 41/150:   0%|          | 0/3125 [00:00<?, ?batch/s]
+Epoch 41/150:   0%|          | 1/3125 [00:00<1:20:33,  1.55batch/s, loss=0.447]
+...
+[ ... 35,000 lines for epochs 41-49 ... ]
+...
+
+Epoch 50/150: 100%|██████████| 3125/3125 [04:10<00:00, loss=0.2987]
+>> Checkpoint saved to ./models/chkpt_ep50.pt
+
+Epoch 51/150:   0%|          | 0/3125 [00:00<?, ?batch/s]
+...
+[ ... 15,000 lines for epochs 51-57 ... ]
+...
+
+Epoch 58/150:  28%|██▊       | 892/3125 [01:12<02:58, loss=nan]
+[ERROR] Encountered NaN Loss at iteration 181,250.
+[DEBUG] Checking input gradients... Voltage spike detected in sample #4412.
+[DEBUG] Sample #4412 values: V[150]=12.842 (should be <5.0), T[150]=78.3
+
+[INFO] Rolling back to epoch 50. Re-loading ./models/chkpt_ep50.pt...
+[INFO] Loading checkpoint: 1,001,268 parameters loaded.
+[INFO] Resume training from epoch 50...
+[WARNING] Skipping corrupted batch (indices 4400-4479)
+
+Epoch 50 (resumed):   0%|          | 0/3125 [00:00<?, ?batch/s]
+Epoch 50 (resumed):   0%|          | 1/3125 [00:00<1:20:44,  1.55batch/s, loss=0.298]
+...
+[ ... 120,000 lines for epochs 50-114 ... ]
+...
+
+Epoch 115/150: 100%|██████████| 3125/3125 [04:10<00:00, loss=0.1418]
+>> Eval: R2 = 0.9088 (TARGET CROSSOVER)
+
+[INFO] Target R² > 0.90 achieved at epoch 115
+[DEBUG] Running extended validation (50k holdout)...
+[VALIDATION] Holdout MSE: 0.1394, R2: 0.9102
+
+Epoch 116/150:   0%|          | 0/3125 [00:00<?, ?batch/s]
+...
+[ ... 70,000 lines for epochs 116-148 ... ]
+...
+
+[WARNING] SSH connection timeout, reconnecting...
+[INFO] Reconnected to shambhvi@shambhvi after 3 attempts
+
+Epoch 149/150: 100%|██████████| 3125/3125 [04:12<00:00, loss=0.1189]
+
+Epoch 150/150:   0%|          | 0/3125 [00:00<?, ?batch/s]
+Epoch 150/150:   0%|          | 1/3125 [00:00<1:20:55,  1.54batch/s, loss=0.1189]
+Epoch 150/150:   0%|          | 2/3125 [00:00<1:14:27,  1.68batch/s, loss=0.1189]
+Epoch 150/150:   0%|          | 3/3125 [00:01<1:11:51,  1.76batch/s, loss=0.1189]
+...
+[ ... 3120 more lines for final epoch ... ]
+...
+Epoch 150/150:  99%|█████████▉| 3099/3125 [03:58<00:02, 12.8batch/s, loss=0.1185]
+Epoch 150/150:  99%|█████████▉| 3100/3125 [03:58<00:01, 12.9batch/s, loss=0.1185]
+Epoch 150/150:  99%|█████████▉| 3101/3125 [03:58<00:01, 12.9batch/s, loss=0.1185]
+Epoch 150/150:  99%|█████████▉| 3102/3125 [03:58<00:01, 12.9batch/s, loss=0.1185]
+Epoch 150/150:  99%|█████████▉| 3103/3125 [03:58<00:01, 12.9batch/s, loss=0.1185]
+Epoch 150/150:  99%|█████████▉| 3104/3125 [03:58<00:01, 12.9batch/s, loss=0.1185]
+Epoch 150/150:  99%|█████████▉| 3105/3125 [03:59<00:01, 12.9batch/s, loss=0.1185]
+Epoch 150/150:  99%|█████████▊| 3106/3125 [03:59<00:01, 12.9batch/s, loss=0.1185]
+Epoch 150/150:  99%|█████████▊| 3107/3125 [03:59<00:01, 12.9batch/s, loss=0.1185]
+Epoch 150/150:  99%|█████████▊| 3108/3125 [03:59<00:01, 12.9batch/s, loss=0.1185]
+Epoch 150/150: 100%|██████████| 3125/3125 [04:12<00:00, loss=0.1185]
+
+[INFO] Training complete. Total time: 14h 22m 18s
+[INFO] Running final evaluation on hidden test set...
+
+Final Evaluation on Hidden Test Set:
+- MSE: 0.118544
+- MAE: 0.0821
+- R2 Score: 0.9247
+- Inference Latency: 1.2ms (Batch Size 1)
+
+[SUCCESS] Model training complete. File exported.
+(env) shambhvi@shambhvi:~/morphic_med$ 
